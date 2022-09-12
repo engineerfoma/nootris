@@ -1,0 +1,19 @@
+@mixin font($weight, $size, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+};
+
+
+$bckg-color: #111;
+$orange-color: #FCB500;
+$hoverColor: #808080;
+
+
+$breakpoint1440: 1439.98px;
+$breakpoint1280: 1279.98px;
+$breakpoint1114: 1113.98px;
+$breakpoint1084: 1083.98px;
+$breakpoint850: 849.98px;
+$breakpoint768: 767.98px;
+$breakpoint480: 479.98px;

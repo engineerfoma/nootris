@@ -1,0 +1,47 @@
+@import './_vars.scss';
+
+.discount {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: -4;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    max-height: 100vh;
+    height: 926px;
+    background-color: #111;
+    
+    &__title {
+        @include font(700, 48px, 1.19);
+        color: #fff;
+        max-width: 91vw;
+        margin: 110px auto 0;
+        text-align: center;
+
+        &_sale {
+            color: $orange-color;
+        }
+    }
+
+    &__price {
+        @include font(400, 36px, 1.19);
+        color: #adadad;
+        text-decoration: line-through;
+        
+        
+        &_sale {
+            @include font(400, 48px, 1.19);
+            margin: 0  0 0 32px;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        margin: 85px 0 59px;
+        justify-content: center;
+    }
+}

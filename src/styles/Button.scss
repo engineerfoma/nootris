@@ -1,0 +1,11 @@
+@import './_vars';
+
+.button {
+    max-width: 256px;
+    max-height: 56px;
+    background-color: $orange-color;
+    color: #000;
+    border: none;
+    border-radius: 7px;
+    @include font(400, 18px, 1.17);
+}
