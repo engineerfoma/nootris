@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nootris/static/css/main.16cf8aa4.css",
+    "main.js": "/nootris/static/js/main.6a4b96d7.js",
+    "static/media/Rubik-Regular.ttf": "/nootris/static/media/Rubik-Regular.0e9f6fc82246faec601b.ttf",
+    "static/media/Rubik-Bold.ttf": "/nootris/static/media/Rubik-Bold.f209729fe4bcc3614ab4.ttf",
+    "static/media/bg.png": "/nootris/static/media/bg.1278312e7cf4ea3e6efc.png",
+    "static/media/ginger.png": "/nootris/static/media/ginger.9a37c3e2e38b2cb44b5e.png",
+    "static/media/lemon.png": "/nootris/static/media/lemon.95885c53d7ac50c6131c.png",
+    "static/media/Rubik-Regular.woff": "/nootris/static/media/Rubik-Regular.d147eb7742bb360aea53.woff",
+    "static/media/Rubik-Bold.woff": "/nootris/static/media/Rubik-Bold.dc922cffbbf04101d4f5.woff",
+    "static/media/nootris.png": "/nootris/static/media/nootris.8655f1af940bc7b77b90.png",
+    "static/media/nootris-min.png": "/nootris/static/media/nootris-min.be02eca4c04f0a4ee682.png",
+    "static/media/ginger-min.png": "/nootris/static/media/ginger-min.c1f45923231f0c98a6e8.png",
+    "static/media/vorus.png": "/nootris/static/media/vorus.a82956f98fd8a8fc7f84.png",
+    "static/media/logo.svg": "/nootris/static/media/logo.1ab53c3720cc560f4c5cc5f51a00467a.svg",
+    "static/media/basket.svg": "/nootris/static/media/basket.84eff75c73bd73fd25b23b5f5f6661c3.svg",
+    "index.html": "/nootris/index.html",
+    "main.16cf8aa4.css.map": "/nootris/static/css/main.16cf8aa4.css.map",
+    "main.6a4b96d7.js.map": "/nootris/static/js/main.6a4b96d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16cf8aa4.css",
+    "static/js/main.6a4b96d7.js"
+  ]
+}
