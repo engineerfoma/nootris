@@ -1,11 +1,18 @@
 @import './_vars';
 
 .button {
-    max-width: 256px;
-    max-height: 56px;
+    width: 256px;
+    height: 56px;
     background-color: $orange-color;
+    padding: 32px 16px;
     color: #000;
     border: none;
     border-radius: 7px;
     @include font(400, 18px, 1.17);
+
+    &:hover {
+        cursor: pointer;
+        background-color: gray;
+        opacity: .8;
+    }
 }

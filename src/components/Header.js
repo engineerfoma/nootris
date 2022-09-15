@@ -11,7 +11,7 @@ const Header = () => {
         <img src={Logo} alt="logo" className="header__logo" />
         <nav className="header__nav">
           <ul className="header__list">
-            <li className="header__list_item">
+            <li className="header__list_item hover_o">
               FAQ
             </li>
             <li className="header__list_item">

@@ -7,9 +7,8 @@
     z-index: -1;
     margin: 0;
     max-width: 100%;
-    width: 100vw;
-    max-height: 100vh;
-    height: 874px;
+    width: 100%;
+    height: 872px;
     background-image: url('../images/bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -17,10 +16,11 @@
 
     &__container {
         position: absolute;
-        top: 176px;
-        left: 64px;
+        top: 185px;
+        left: 65px;
         margin: 0;
         width: 70vw;
+        
         z-index: 5;
     }
 
@@ -30,22 +30,24 @@
         @include font(700, 144px, 1.06);
         color: #fff;
         margin: 0;
+        letter-spacing: 2px;
 
         &_description {
             @include font(400, 24px, 1.17);
             max-width: 660px;
-            margin: 24px 0 0;
+            margin: 26px 0 0;
         }
     }
 
     &__subtitle {
-        margin: 120px 0 0;
+        margin: 115px 0 0;
         @include font(700, 36px, 1.2);
         max-width: 416px;
         
         &_description {
-            margin: 12px 0 0;
-            max-width: 310px;
+            margin: 6px 0 0;
+            max-width: 340px;
+            @include font(400, 18px, 1.17);
         }
     }
 

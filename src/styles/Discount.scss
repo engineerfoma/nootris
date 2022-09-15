@@ -1,22 +1,21 @@
 @import './_vars.scss';
 
 .discount {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: -190px;
     left: 0;
     z-index: -4;
     margin: 0;
-    max-width: 100%;
-    width: 100vw;
-    max-height: 100vh;
+    width: 100%;
     height: 926px;
     background-color: #111;
-    
+
     &__title {
         @include font(700, 48px, 1.19);
         color: #fff;
         max-width: 91vw;
         margin: 110px auto 0;
+        padding-top: 110px;
         text-align: center;
 
         &_sale {
@@ -28,11 +27,11 @@
         @include font(400, 36px, 1.19);
         color: #adadad;
         text-decoration: line-through;
-        
-        
+        margin-left: 20px;
+
         &_sale {
             @include font(400, 48px, 1.19);
-            margin: 0  0 0 32px;
+            margin: 0 0 0 38px;
             color: #fff;
             text-decoration: none;
         }
@@ -41,7 +40,62 @@
     &__container {
         display: flex;
         align-items: center;
-        margin: 85px 0 59px;
+        margin: 50px auto 15px;
         justify-content: center;
     }
+}
+
+.bonus {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 64px;
+
+    &__item {
+        max-width: 193px;
+      
+
+        &_picture {
+            margin-bottom: 78px;
+
+            &_big {
+                margin-bottom: 35px;
+                padding-top: 10px;
+            }
+        }
+
+        &_big {
+            max-width: 480px;
+        }
+    }
+
+    &__description {
+        @include font(400, 18px, 1.17);
+        color: #fff;
+        margin: 0;
+        text-align: center;
+
+        &_big {
+            @include font(400, 36px, 1.19);
+            color: #fff;
+            margin: 0;
+            text-align: center;
+        }
+
+        &_current {
+            color: $orange-color;
+
+            &-big {
+                @include font(400, 24px, 1.16);
+                color: #fff;
+                margin: 0;
+                text-align: center;
+                color: $orange-color;
+            }
+        }
+    }
+}
+
+.button__container {
+    text-align: center;
 }
