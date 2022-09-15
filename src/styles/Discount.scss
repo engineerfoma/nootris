@@ -1,13 +1,13 @@
 @import './_vars.scss';
 
+
 .discount {
     position: relative;
-    top: -190px;
+    margin-top: -190px;
     left: 0;
-    z-index: -4;
-    margin: 0;
+    z-index: -2;
     width: 100%;
-    height: 926px;
+    min-height: auto;
     background-color: #111;
 
     &__title {
@@ -17,6 +17,23 @@
         margin: 110px auto 0;
         padding-top: 110px;
         text-align: center;
+
+        @media screen and (max-width: $breakpoint980) {
+            font-size: 34px;
+        }
+
+        @media screen and (max-width: $breakpoint730) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: $breakpoint570) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: $breakpoint480) {
+            font-size: 18px;
+            padding-top: 65px;
+        }
 
         &_sale {
             color: $orange-color;
@@ -29,11 +46,19 @@
         text-decoration: line-through;
         margin-left: 20px;
 
+        @media screen and (max-width: $breakpoint570) {
+            font-size: 30px;
+        }
+
         &_sale {
             @include font(400, 48px, 1.19);
             margin: 0 0 0 38px;
             color: #fff;
             text-decoration: none;
+
+            @media screen and (max-width: $breakpoint570) {
+                font-size: 30px;
+            }
         }
     }
 
@@ -42,6 +67,14 @@
         align-items: center;
         margin: 50px auto 15px;
         justify-content: center;
+
+        @media screen and (max-width: $breakpoint980) {
+            margin-top: 25px;
+        }
+
+        @media screen and (max-width: $breakpoint452) {
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -51,21 +84,83 @@
     justify-content: space-evenly;
     margin: 0 auto 64px;
 
+    @media screen and (max-width: $breakpoint452) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
     &__item {
         max-width: 193px;
-      
+
+        @media screen and (max-width: $breakpoint452) {
+            margin-bottom: 20px;
+        }
+
+        &_vorus {
+            text-align: center;
+
+            @media screen and (max-width: $breakpoint452) {
+                margin-top: 20px;
+            }
+        }
 
         &_picture {
             margin-bottom: 78px;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            @media screen and (max-width: $breakpoint980) {
+                max-width: 160px;
+            }
+
+            @media screen and (max-width: $breakpoint800) {
+                max-width: 140px;
+            }
+
+            @media screen and (max-width: $breakpoint729) {
+                max-width: 120px;
+                margin-bottom: 55px;
+            }
+
+            @media screen and (max-width: $breakpoint570) {
+                max-width: 70px;
+            }
+
+            @media screen and (max-width: $breakpoint452) {
+                margin-bottom: 10px;
+            }
 
             &_big {
                 margin-bottom: 35px;
                 padding-top: 10px;
+
+                @media screen and (max-width: $breakpoint980) {
+                    max-width: 420px;
+                }
+
+                @media screen and (max-width: $breakpoint800) {
+                    max-width: 350px;
+                }
+
+                @media screen and (max-width: $breakpoint729) {
+                    max-width: 330px;
+                    margin-bottom: 25px;
+                }
+
+                @media screen and (max-width: $breakpoint570) {
+                    max-width: 240px;
+                }
             }
         }
 
         &_big {
             max-width: 480px;
+
         }
     }
 
@@ -75,11 +170,32 @@
         margin: 0;
         text-align: center;
 
+        @media screen and (max-width: $breakpoint980) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: $breakpoint570) {
+            font-size: 12px;
+        }
+
         &_big {
             @include font(400, 36px, 1.19);
             color: #fff;
             margin: 0;
             text-align: center;
+
+
+            @media screen and (max-width: $breakpoint980) {
+                font-size: 28px;
+            }
+
+            @media screen and (max-width: $breakpoint570) {
+                font-size: 22px;
+            }
+
+            @media screen and (max-width: $breakpoint452) {
+                font-size: 16px;
+            }
         }
 
         &_current {
@@ -91,6 +207,14 @@
                 margin: 0;
                 text-align: center;
                 color: $orange-color;
+
+                @media screen and (max-width: $breakpoint570) {
+                    font-size: 22px;
+                }
+
+                @media screen and (max-width: $breakpoint452) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -98,4 +222,10 @@
 
 .button__container {
     text-align: center;
+    cursor: pointer;
+    padding-bottom: 127px;
+
+    @media screen and (max-width: $breakpoint570) {
+        padding-bottom: 60px;
+    }
 }

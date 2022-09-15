@@ -6,13 +6,21 @@
     left: 0;
     z-index: -1;
     margin: 0;
-    max-width: 100%;
     width: 100%;
-    height: 872px;
+    min-height: 872px;
     background-image: url('../images/bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @media screen and (min-width: $breakpoint550) and (max-width: $breakpoint800) {
+        min-height: 720px;
+        max-width: 799px;
+    }
+
+    @media screen and (min-width: $breakpoint320) and (max-width: $breakpoint550) {
+        min-height: 590px;
+    }
 
     &__container {
         position: absolute;
@@ -20,8 +28,16 @@
         left: 65px;
         margin: 0;
         width: 70vw;
-        
         z-index: 5;
+
+        @media screen and (max-width: $breakpoint1200) {
+            top: 145px;
+        }
+
+        @media screen and (max-width: $breakpoint980) {
+            top: 125px;
+            left: 35px;
+        }
     }
 
     &__title {
@@ -32,10 +48,45 @@
         margin: 0;
         letter-spacing: 2px;
 
+        @media screen and (max-width: $breakpoint1439) {
+            font-size: 110px;
+        }
+
+        @media screen and (max-width: $breakpoint1200) {
+            font-size: 80px;
+        }
+
+        @media screen and (max-width: $breakpoint980) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width: $breakpoint730) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: $breakpoint480) {
+            font-size: 32px;
+        }
+
         &_description {
             @include font(400, 24px, 1.17);
-            max-width: 660px;
+            max-width: 42vw;
+            width: 650px;
             margin: 26px 0 0;
+
+            @media screen and (max-width: $breakpoint1439) {
+                font-size: 20px;
+                max-width: 38vw;
+            }
+
+            @media screen and (max-width: $breakpoint1200) {
+                font-size: 16px;
+                max-width: 45vw;
+            }
+
+            @media screen and (max-width: $breakpoint730) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -43,11 +94,45 @@
         margin: 115px 0 0;
         @include font(700, 36px, 1.2);
         max-width: 416px;
-        
+
+        @media screen and (max-width: $breakpoint1439) {
+            font-size: 26px;
+            margin-top: 95px;
+        }
+
+        @media screen and (max-width: $breakpoint1200) {
+            margin-top: 95px;
+        }
+
+        @media screen and (max-width: $breakpoint730) {
+            font-size: 22px;
+            margin-top: 65px;
+        }
+
         &_description {
             margin: 6px 0 0;
             max-width: 340px;
             @include font(400, 18px, 1.17);
+
+            @media screen and (max-width: $breakpoint1439) {
+                font-size: 20px;
+                max-width: 35vw;
+                width: 380px;
+            }
+
+            @media screen and (max-width: $breakpoint1200) {
+                font-size: 16px;
+                max-width: 45vw;
+            }
+
+            @media screen and (max-width: $breakpoint730) {
+                font-size: 14px;
+                max-width: 45vw;
+            }
+
+            @media screen and (min-width: $breakpoint729) {
+                max-width: 60vw;
+            }
         }
     }
 
@@ -57,18 +142,79 @@
             bottom: -110px;
             right: 243px;
             z-index: 5;
+
+            @media screen and (max-width: $breakpoint1439) {
+                right: 203px;
+            }
+
+            @media screen and (max-width: $breakpoint800) {
+                max-width: 50vw;
+                right: 123px;
+                bottom: -80px;
+            }
+
+            @media screen and (min-width: $breakpoint480) and (max-width: $breakpoint800) {
+                // max-width: 50vw;
+                right: 73px;
+                bottom: -53px;
+            }
+
+            @media screen and (min-width: $breakpoint320) and (max-width: $breakpoint480) {
+                // max-width: 50vw;
+                right: 53px;
+                bottom: -35px;
+            }
         }
+
         &_nootris {
             position: absolute;
             bottom: 94px;
             right: 160px;
             z-index: 3;
+
+            @media screen and (max-width: $breakpoint1439) {
+                right: 120px;
+            }
+
+            @media screen and (max-width: $breakpoint800) {
+                max-width: 26vw;
+                right: 80px;
+            }
+
+            @media screen and (min-width: $breakpoint480) and (max-width: $breakpoint800) {
+                max-width: 23vw;
+                right: 40px;
+                bottom: 63px;
+            }
+
+            @media screen and (min-width: $breakpoint320) and (max-width: $breakpoint480) {
+                max-width: 20vw;
+                right: 33px;
+                bottom: 20px;
+            }
         }
+
         &_ginger {
             position: absolute;
             bottom: 112px;
             right: 64px;
             z-index: 2;
+
+            @media screen and (max-width: $breakpoint1439) {
+                right: 24px;
+            }
+
+            @media screen and (min-width: $breakpoint480) and (max-width: $breakpoint800) {
+                max-width: 45vw;
+                right: 0px;
+                bottom: 90px;
+            }
+
+            @media screen and (min-width: $breakpoint320) and (max-width: $breakpoint480) {
+                max-width: 50vw;
+                right: 0px;
+                bottom: 30px;
+            }
         }
     }
 }

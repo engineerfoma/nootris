@@ -3,7 +3,6 @@
 .header {
     max-width: 100%;
     min-height: 80px;
-    // height: 80px;
     padding: 23px 80px 19px 64px;
     background-color: #111;
     color: #fff;
@@ -18,19 +17,27 @@
         padding-left: 10px;
     }
 
+    @media screen and (max-width: $breakpoint980) {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
 
+    @media screen and (max-width: $breakpoint730) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
         height: 37px;
 
-        @media screen and (max-width: $breakpoint980) {
-            height: auto;
-        }
-
         @media screen and (max-width: $breakpoint1200) {
             align-items: center;
+        }
+
+        @media screen and (max-width: $breakpoint980) {
+            height: auto;
         }
 
         @media screen and (max-width: $breakpoint550) {
@@ -41,6 +48,7 @@
     &__logo {
         width: 120px;
         height: 35px;
+
         @media screen and (max-width: $breakpoint980) {
             margin-bottom: 15px;
         }
@@ -53,8 +61,6 @@
     &__nav {
         display: flex;
         align-items: center;
-
-
     }
 
     &__list {
@@ -69,6 +75,7 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+
         @media screen and (max-width: $breakpoint550) {
             flex-direction: column;
             align-items: center;
@@ -95,5 +102,4 @@
             margin-top: 15px;
         }
     }
-} 
-// f=alr ald rcf попадали с даты на дату с 7 по 15 
+}
