@@ -1,7 +1,7 @@
 # Проект: Nootris
 
 ### Описание проекта
-Nootris - тестовое задани. SPA, реализованный на React.js и scss.
+Nootris - тестовое задание. SPA, реализованный на React.js и scss.
 
 ### Используемый стек
 1. HTML
@@ -14,6 +14,9 @@ Nootris - тестовое задани. SPA, реализованный на Re
 3. медиазапросы
 4. React.js
 5. Scss
+
+### Доработать
+Разобраться с transform и hover(не успел)
 
 ### Ссылка на сайт:
 https://engineerfoma.github.io/nootris/
